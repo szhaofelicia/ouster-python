@@ -35,6 +35,9 @@ _trig_table = []
 
 
 def build_trig_table(beam_altitude_angles, beam_azimuth_angles):
+    # print("beam_altitude_angles",len(beam_altitude_angles),beam_altitude_angles)
+    # print("beam_azimuth_angles",len(beam_azimuth_angles),beam_azimuth_angles)
+    
     if not _trig_table:
         for i in range(CHANNEL_BLOCK_COUNT):
             _trig_table.append(
