@@ -4,7 +4,7 @@ import struct
 PACKET_SIZE = 12608
 TICKS_PER_REVOLUTION = 90112
 AZIMUTH_BLOCK_COUNT = 16  # Azimuth blocks per packet
-CHANNEL_BLOCK_COUNT = 64  # Channel blocks per Azimuth block
+CHANNEL_BLOCK_COUNT = 16 # Channel blocks per Azimuth block:64
 RANGE_BIT_MASK = 0x000FFFFF
 CHANNEL_BLOCK = (
     "I"  # Range (20 bits, 12 unused)

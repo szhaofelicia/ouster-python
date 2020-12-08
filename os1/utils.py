@@ -15,6 +15,7 @@ from os1.packet import (
     unpack,
 )
 
+
 # The OS-16 will still contain 64 channels in the packet, but only
 # every 4th channel starting at the 2nd will contain data .
 OS_16_CHANNELS = (2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50, 54, 58, 62)
@@ -35,9 +36,7 @@ _trig_table = []
 
 
 def build_trig_table(beam_altitude_angles, beam_azimuth_angles):
-    # print("beam_altitude_angles",len(beam_altitude_angles),beam_altitude_angles)
-    # print("beam_azimuth_angles",len(beam_azimuth_angles),beam_azimuth_angles)
-    
+   
     if not _trig_table:
         for i in range(CHANNEL_BLOCK_COUNT):
             _trig_table.append(
