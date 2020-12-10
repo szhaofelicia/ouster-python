@@ -51,6 +51,7 @@ class OS1(object):
     def run_forever(self, handler, threaded=False):
         if self._server is None:
             self._create_server(handler, threaded)
+            print("Created server")
         self._server.serve_forever()
 
     def handle_request(self, handler):
