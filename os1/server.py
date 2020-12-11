@@ -12,6 +12,8 @@ class RequestHandler(BaseRequestHandler):
         super(RequestHandler, self).__init__(*args, **kwargs)
 
     def handle(self):
+        print("Begin to retreive data")
         data = self.request[0]
+        print("data retrieved",data)
         if len(data) == PACKET_SIZE:
             self.handler(data)
