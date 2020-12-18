@@ -11,7 +11,7 @@ def handler():
     #     for coords in zip(x, y, z):
     #         f.write("{}\n".format(','.join(coords)))
         
-os1 = OS1('172.24.113.151', '10.27.64.222', mode='1024x20') # PC_ethernet: 192.168.0.141, PC VPN:10.27.94.178, lab: 216.165.113.240
+os1 = OS1('172.24.113.151', '10.27.23.132', mode='1024x20') # PC_ethernet: 192.168.0.141, PC VPN:10.27.94.178, lab: 216.165.113.240
 os1.start()
 os1.run_forever(handler)
 
