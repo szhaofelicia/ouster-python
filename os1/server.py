@@ -12,8 +12,7 @@ class RequestHandler(BaseRequestHandler):
         super(RequestHandler, self).__init__(*args, **kwargs)
 
     def handle(self):
-        # data = self.request[0]
-        # if len(data) == PACKET_SIZE:
-        #     self.handler(data)
-
-        self.handler()
+        data = self.request[0]
+        # print(len(data),PACKET_SIZE)
+        if len(data) == PACKET_SIZE:
+            self.handler(data)

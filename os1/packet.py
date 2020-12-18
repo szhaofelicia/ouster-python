@@ -1,7 +1,7 @@
 import math
 import struct
 
-PACKET_SIZE = 12608
+PACKET_SIZE = 3392 #12608
 TICKS_PER_REVOLUTION = 90112
 AZIMUTH_BLOCK_COUNT = 16  # Azimuth blocks per packet
 CHANNEL_BLOCK_COUNT = 16 # Channel blocks per Azimuth block:64
